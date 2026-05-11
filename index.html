@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blooms - Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            color: #202020;
+            background: #fff;
+        }
+
+        .page-shell {
+            width: min(1500px, calc(100% - 100px));
+            margin: 0 auto;
+        }
+
+        .rounded-image {
+            border-radius: 24px;
+            object-fit: cover;
+        }
+
+        .nav-link,
+        .label {
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: .03em;
+            text-transform: uppercase;
+        }
+
+        .product-title {
+            font-size: 13px;
+            font-weight: 900;
+            line-height: 1.1;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .price {
+            font-size: 11px;
+            font-weight: 800;
+            color: #575757;
+            text-transform: none;
+        }
+
+        @media (max-width: 760px) {
+            .page-shell {
+                width: min(100% - 32px, 1150px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="page-shell border-b border-[#9a9a9a]">
+        <div class="flex items-center justify-between py-7">
+            <a href="../../Our Blooms/index.html" aria-label="Our Blooms home">
+                <img src="./image/Logo Image.png" alt="Our Blooms" class="h-8 w-auto">
+            </a>
+            <nav class="flex items-center gap-10">
+                <a class="nav-link" href="./index.html">Gallery</a>
+                <a class="nav-link" href="../../Our Blooms — копия/src/index.html">About</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-shell pt-12">
+            <h1 class="text-4xl md:text-5xl font-black tracking-[-.02em] uppercase">Gallery</h1>
+
+            <div class="mt-20 grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-4">
+                <p class="label text-[#555] leading-tight">Seasonal<br>Arrangements</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-14">
+                    <article>
+                        <h2 class="product-title">Dawn Bloom <span class="price">$55/Bunch</span></h2>
+                        <img src="./image/2.png" alt="Dawn Bloom" class="mt-3 rounded-image w-full aspect-square">
+                    </article>
+                    <article>
+                        <h2 class="product-title">Solstice Stems <span class="price">$30/Bunch</span></h2>
+                        <img src="./image/1.png" alt="Solstice Stems" class="mt-3 rounded-image w-full aspect-square">
+                    </article>
+                    <article>
+                        <h2 class="product-title">Whisper Greens <span class="price">$120/Bunch</span></h2>
+                        <img src="./image/3.png" alt="Whisper Greens" class="mt-3 rounded-image w-full aspect-square">
+                    </article>
+                    <article>
+                        <h2 class="product-title">Clarity Petals <span class="price">$55/Bunch</span></h2>
+                        <img src="./image/Gallery item 04.png" alt="Clarity Petals" class="mt-3 rounded-image w-full aspect-square">
+                    </article>
+                    <article>
+                        <h2 class="product-title">River Stone <span class="price">$30/Bunch</span></h2>
+                        <img src="./image/Gallery item 05.png" alt="River Stone" class="mt-3 rounded-image w-full aspect-square">
+                    </article>
+                    <article>
+                        <h2 class="product-title">Moonlit Meadow <span class="price">$120/Bunch</span></h2>
+                        <img src="./image/4.png" alt="Moonlit Meadow" class="mt-3 rounded-image w-full aspect-square">
+                    </article>
+                    <article>
+                        <h2 class="product-title">Ember Leaf <span class="price">$55/Bunch</span></h2>
+                        <img src="./image/5.png" alt="Ember Leaf" class="mt-3 rounded-image w-full aspect-square">
+                    </article>
+                    <article>
+                        <h2 class="product-title">Skyline Bloom <span class="price">$75/Bunch</span></h2>
+                        <img src="./image/6.png" alt="Skyline Bloom" class="mt-3 rounded-image w-full aspect-square">
+                    </article>
+                    <article>
+                        <h2 class="product-title">Still Waters <span class="price">$250/Bunch</span></h2>
+                        <img src="./image/7.png" alt="Still Waters" class="mt-3 rounded-image w-full aspect-square">
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-shell pt-44">
+            <div class="grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-4">
+                <p class="label">Services</p>
+
+                <div class="space-y-14">
+                    <article class="border-t border-[#9a9a9a] pt-7 grid grid-cols-1 md:grid-cols-[1fr_460px] gap-10 items-start">
+                        <div>
+                            <h2 class="text-4xl md:text-5xl font-black uppercase leading-[.96] tracking-[-.05em]">Floral<br>Installations</h2>
+                            <p class="mt-8 max-w-[390px] text-sm font-bold leading-[1.5]">
+                                We create clean, contemporary designs that elevate any environment, from intimate gatherings to grand events.
+                            </p>
+                        </div>
+                        <img src="./image/8.png" alt="Floral installations" class="rounded-image w-full aspect-[1.35/1]">
+                    </article>
+
+                    <article class="border-t border-[#9a9a9a] pt-7 grid grid-cols-1 md:grid-cols-[1fr_460px] gap-10 items-start">
+                        <div>
+                            <h2 class="text-4xl md:text-5xl font-black uppercase leading-[.96] tracking-[-.05em]">Native Plant<br>Arrangements</h2>
+                            <p class="mt-8 max-w-[390px] text-sm font-bold leading-[1.5]">
+                                Our selection of locally sourced flora brings natural resilience and effortless elegance to your home.
+                            </p>
+                        </div>
+                        <img src="./image/9.png" alt="Native plant arrangements" class="rounded-image w-full aspect-[1.35/1]">
+                    </article>
+
+                    <article class="border-t border-[#9a9a9a] pt-7 grid grid-cols-1 md:grid-cols-[1fr_460px] gap-10 items-start">
+                        <div>
+                            <h2 class="text-4xl md:text-5xl font-black uppercase leading-[.96] tracking-[-.05em]">Custom Floral<br>Concepts</h2>
+                            <p class="mt-8 max-w-[390px] text-sm font-bold leading-[1.5]">
+                                Your vision, our blooms. We build arrangements that are both personal and exquisitely simple.
+                            </p>
+                        </div>
+                        <img src="./image/7.png" alt="Custom floral concepts" class="rounded-image w-full aspect-[1.35/1]">
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-shell pt-44 text-center">
+            <p class="label">Work With Us</p>
+            <h2 class="mt-5 mx-auto max-w-[430px] text-3xl md:text-4xl font-black leading-[1.04] tracking-[-.05em]">
+                Discover how we can add a touch of natural beauty to your next event.
+            </h2>
+            <a href="../../Our Blooms — копия/src/index.html" class="inline-flex mt-8 items-center rounded bg-[#ffc400] px-5 py-3 text-[11px] font-black uppercase tracking-[-.02em]">
+                * About Us
+            </a>
+        </section>
+    </main>
+
+    <footer id="contact" class="page-shell pt-44 pb-10">
+        <img src="./image/Footer.png" alt="Our Blooms footer, Miami FL, Contact" class="w-full rounded-image">
+    </footer>
+</body>
+</html>
